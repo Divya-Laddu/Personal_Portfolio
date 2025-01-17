@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Divya Kumari</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">VITIAN.</h1>
+            <nav>
+                <ul>
+                    <li><a href="my_p.html">Home</a></li>
+                    <li><a href="my_p3.html">About</a></li>
+                    <li><a href="my_p2.html">Contact</a></li>
+                    <li><a href="my_p4.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3 class="faq-question">What technologies do you specialize in?</h3>
+                    <p class="faq-answer">I specialize in front-end technologies like HTML, CSS, and JavaScript, as well as back-end technologies like Node.js and Python. I also work with frameworks such as React and Django.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I get in touch with you?</h3>
+                    <p class="faq-answer">You can reach out to me via the <a href="contact.html">Contact</a> page or connect with me on LinkedIn, Instagram, or GitHub through the links provided in the footer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is your approach to problem-solving?</h3>
+                    <p class="faq-answer">I approach problem-solving with a focus on understanding the root cause, breaking down the problem into manageable parts, and exploring various solutions before implementing the most effective one.</p>
+                </div>
+                <div class="ask-question">
+                    <button id="openModal" class="btn btn-ask">Ask your Question</button>
+                </div>
+            </div>
+        </section>
+        <div id="questionModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Submit Your Question</h2>
+                <form action="submit_question.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Divya Kumari. All rights reserved.</p>
+        <a href="my_p.html" class="btn btn-secondary">
+            <button class="footer-btn">Back to Home</button>
+        </a>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+</html>

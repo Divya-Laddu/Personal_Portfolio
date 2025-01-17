@@ -1,0 +1,374 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
+}
+
+/* Container for general layout */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #232222;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #f2e9e9;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e8d5d5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #6a74db;
+}
+
+header .cta {
+    background-color: #6a74db;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .cta:hover {
+    background-color: #555;
+}
+
+/* About Section */
+.about-section {
+    background: #f4f4f4;
+    padding: 30px 0;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-family: 'Georgia', serif; /* Font style */
+    font-size: 2.0em; /* Font size */
+    color: #171515; /* Text color */
+    padding-bottom: 10px; /* Space between text and border */
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: center; /* Align text to the left */
+    text-transform: uppercase; /* Uppercase text */
+
+    /* Animation properties */
+    opacity: 0; /* Start invisible */
+    animation: fadeInBounce 6s ease-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-me-content {
+    background-color: #fffefe; /* Light background color for contrast */
+    padding: 20px; /* Add padding inside the div */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.2); /* Subtle shadow for depth */
+    line-height: 1.6; /* Improve readability */
+}
+
+.about-me-content p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.about-me-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills Section */
+.skills-section {
+    background: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.skills-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.skill h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.skill p {
+    margin: 0;
+    color: #333;
+}
+
+/* Extra-curricular Section */
+/* .extra-curricular {
+    background-color: #ffffff;
+    padding: 2em 0;
+    text-align: center;
+    flex: 1; 
+} */
+
+.extra-curricular .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.extra-curricular h2 {
+    font-family: 'Georgia', serif; 
+    font-size: 2.0em; 
+    color: #171515; 
+    padding-bottom: 10px; 
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+    opacity: 0;
+    animation: fadeInBounce 6s ease-out forwards;
+}
+
+.extra-curricular .activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.extra-curricular .activity {
+    width: 20%;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.extra-curricular .activity img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5em;
+}
+
+.extra-curricular .activity p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Achievements Section */
+.achievements {
+    background-color: #ffffff;
+    padding: 2em 0;
+    text-align: center;
+    flex: 1; 
+}
+
+.achievements .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.achievements h2 {
+    font-family: 'Georgia', serif; 
+    font-size: 2.0em; 
+    color: #171515; 
+    padding-bottom: 10px; 
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+    opacity: 0;
+    animation: fadeInBounce 6s ease-out forwards;
+}
+
+.achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.achievement {
+    width: 30%;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.achievement img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5em;
+}
+
+.achievement h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+
+.achievement p {
+    font-size: 1em;
+    color: #333;
+}
+/* Style for the "Go Up" button */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Hover effect */
+.read-more:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Optional: Position the button at the bottom right corner */
+.read-more {
+    position: fixed;
+    bottom: 60px;
+  
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+/* Optional: Change opacity on hover */
+.read-more:hover {
+    opacity: 1;
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer a.footer-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer a.footer-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero h2 span {
+    color: #007bff;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .profile-img {
+        text-align: center;
+    }
+}
