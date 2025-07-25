@@ -161,3 +161,25 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-heading {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animated-subheading {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+}
+
